@@ -44,16 +44,16 @@
 			"response": []
 		},
 		{
-			"name": "Helmet",
+			"name": "Helmet1",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"let jsonData = pm.response.json()",
+							"let jsonData = pm.response.json().data",
 							" pm.test(\"Response body contains\", () => {",
 							"     _.each(jsonData, (item) => {",
-							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('false')",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
 							"     })",
 							" });"
 						],
@@ -65,7 +65,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://protectiongroupdenmark.com/json/productvariants/data/17",
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=8%2C16",
 					"protocol": "https",
 					"host": [
 						"protectiongroupdenmark",
@@ -74,8 +74,486 @@
 					"path": [
 						"json",
 						"productvariants",
-						"data",
-						"17"
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "8%2C16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=8%2C18",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "8%2C18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=8%2C17",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "8%2C17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=8%2C32",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "8%2C32"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=8%2C29",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "8%2C29"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=8%2C30",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "8%2C30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=13%2C16",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "13%2C16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=13%2C18",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "13%2C18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=13%2C17",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "13%2C17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=13%2C32",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "13%2C32"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=13%2C29",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "13%2C29"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helmet12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json().data",
+							" pm.test(\"Response body contains\", () => {",
+							"     _.each(jsonData, (item) => {",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"     })",
+							" });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/13?dataIds=13%2C30",
+					"protocol": "https",
+					"host": [
+						"protectiongroupdenmark",
+						"com"
+					],
+					"path": [
+						"json",
+						"productvariants",
+						"13"
+					],
+					"query": [
+						{
+							"key": "dataIds",
+							"value": "13%2C30"
+						}
 					]
 				}
 			},
