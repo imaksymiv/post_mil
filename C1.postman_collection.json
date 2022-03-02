@@ -27,7 +27,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://protectiongroupdenmark.com/json/productvariants/data/30?",
+					"raw": "https://protectiongroupdenmark.com/json/productvariants/data/30",
 					"protocol": "https",
 					"host": [
 						"protectiongroupdenmark",
@@ -38,12 +38,6 @@
 						"productvariants",
 						"data",
 						"30"
-					],
-					"query": [
-						{
-							"key": "",
-							"value": null
-						}
 					]
 				}
 			},
@@ -56,10 +50,10 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"let jsonData = pm.response.json().data",
+							"let jsonData = pm.response.json()",
 							" pm.test(\"Response body contains\", () => {",
 							"     _.each(jsonData, (item) => {",
-							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('true')",
+							"         pm.expect(new Boolean(item.Soldout).toString()).to.eq('false')",
 							"     })",
 							" });"
 						],
